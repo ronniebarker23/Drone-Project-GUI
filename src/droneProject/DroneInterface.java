@@ -106,13 +106,13 @@ public class DroneInterface extends Application {
                                         y = Double.parseDouble(input);
                                     }
                                     if(droneCount == 4) {		//next add speed if has one
-                                        if (input != "\n"){
+                                        if (input.length() > 0){
                                             speed = Double.parseDouble(input);
                                         }
 
                                     }
                                     if(droneCount == 5) {		//next add angle if has one
-                                        if (input != "\n"){
+                                        if (input.length() > 0){
                                             angle = Double.parseDouble(input);
                                         }
 

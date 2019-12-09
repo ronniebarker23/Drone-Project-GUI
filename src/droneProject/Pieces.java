@@ -80,12 +80,11 @@ public abstract class Pieces {
      */
     public String saveDrone() {
         String save = "";
-        save += colour;
+        save += colour + "\n";
         save += ID + "\n";
         save += xPosition + "\n";
         save += yPosition + "\n";
         //add extra lines where speed and angle will be added for drone
-        save += "\n";
         save+= "\n";
 
         return save;
