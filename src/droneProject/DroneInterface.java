@@ -304,6 +304,10 @@ public class DroneInterface extends Application {
         mc = new MyCanvas(canvas, canvasSize, canvasSize);
         // create MyCanvas passing size
         arena = new DroneArena(canvasSize, canvasSize);
+        //add 3 items for inital arena set up
+        arena.addDrone('d');
+        arena.addDrone('o');
+        arena.addDrone('b');
 
         bp.setCenter(root);                            // put group in centre pane
 
@@ -329,5 +333,6 @@ public class DroneInterface extends Application {
 
         stagePrimary.setScene(scene);
         stagePrimary.show();
+        displaySystem();
     }
 }
