@@ -7,7 +7,6 @@ package droneProject;
 public abstract class Pieces {
     protected double xPosition;
     protected double yPosition;
-    protected static int start = 0;
     protected int ID;
     protected int size;
     protected char colour;
@@ -21,8 +20,7 @@ public abstract class Pieces {
         // x and y location
         xPosition = X;
         yPosition = Y;
-        //unique ID
-        ID = start++;
+
     }
 
 

@@ -6,6 +6,8 @@ package droneProject;
  */
 public class Bird extends Drone {
 
+    private static int start = 0;
+
     /**
      * instantiate bird
      * @param X int
@@ -13,6 +15,8 @@ public class Bird extends Drone {
      */
     public Bird(double X, double Y) {
         super(X, Y);
+        //unique ID
+        ID = start++;
         speed = 4;
         size = 6;
         colour = 'o';

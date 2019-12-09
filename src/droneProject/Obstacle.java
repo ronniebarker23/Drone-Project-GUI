@@ -6,6 +6,8 @@ package droneProject;
  */
 public class Obstacle extends Pieces {
 
+    private static int start = 0;
+
     /**
      * instantiate piece
      *
@@ -14,6 +16,8 @@ public class Obstacle extends Pieces {
      */
     public Obstacle(double X, double Y) {
         super(X, Y);
+        //unique ID
+        ID = start++;
         //all obstacles have set size and colour
         size = 10;
         colour = 'g'; //green for tree

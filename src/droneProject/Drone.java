@@ -9,6 +9,7 @@ public class Drone extends Pieces{
 
     protected double speed = 2;           //speed of all drones is 2
     protected double angle;
+    private static int begin = 0;
 
     /**
      * instantiate drone
@@ -19,12 +20,15 @@ public class Drone extends Pieces{
         super(X, Y);
         size = 3;
         colour = 'w';
+        //unique ID
+        if (this.getClass() != Bird.class){     //don't increase if new bird
+            ID = begin++;
+        }
         //add a random direction
         Random rand = new Random(System.currentTimeMillis());
         angle = rand.nextFloat()*2*Math.PI;
 
     }
-
 
 
     /**
